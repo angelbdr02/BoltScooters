@@ -1,0 +1,155 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #a00000; 
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    height: 60px; 
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+    display: inline-block; 
+}
+
+.navbar a {
+    text-decoration: none;
+    font-family: 'Krona One', sans-serif;
+    color: #fff; 
+    font-size: 16px;
+    padding: 10px 20px; 
+    display: inline-block; 
+}
+
+.navbar a:hover {
+    background-color: rgba(0, 0, 0, 0.7); 
+    border-radius: 5px; 
+}
+
+.hero {
+    position: relative; 
+    background-image: url('/BoltScooters/imagenes/portadahistoria.png'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 80vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    color: #fff; 
+    padding: 0 20px; 
+}
+
+.hero-content {
+    position: relative; 
+    text-align: center; 
+    z-index: 2; 
+}
+
+.hero-content h1 {
+    font-family: 'Krona One', sans-serif; 
+    font-size: 3rem; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
+}
+
+.historia {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.historia-seccion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px 0;
+}
+
+.historia-seccion:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+.historia-imagen img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.historia-texto {
+    flex: 1;
+    font-family: 'Karma', serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.historia-rojo {
+    background-color: #a00000;
+    padding: 40px 20px;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.pie-pagina {
+    background-color: #0a0a0a; 
+    color: #fff; 
+    padding: 30px 20px; 
+    text-align: center;
+    font-family: 'Karma', sans-serif;
+}
+
+.contenedor-footer {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto; 
+}
+
+.contacto, .redes-sociales, .logo-footer {
+    flex: 1; 
+    margin: 0 10px; 
+    text-align: center; 
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+    margin-top: 10px;
+}
+
+.icono-red {
+    width: 36px; 
+    height: 36px;
+}
+
+.logo-footer img {
+    max-width: 120px; 
+    margin-top: 10px;
+}
+
+.copyright {
+    margin-top: 20px; 
+    font-size: 14px; 
+    color: #ccc; 
+}

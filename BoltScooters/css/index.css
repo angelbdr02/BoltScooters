@@ -1,0 +1,237 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #a00000; 
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    height: 60px; 
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+    display: inline-block; 
+}
+
+.navbar a {
+    text-decoration: none;
+    font-family: 'Krona One', sans-serif;
+    color: #fff; 
+    font-size: 16px;
+    padding: 10px 20px; 
+    display: inline-block; 
+}
+
+.navbar a:hover {
+    background-color: rgba(0, 0, 0, 0.7); 
+    border-radius: 5px; 
+}
+
+.hero {
+    position: relative; 
+    background-image: url('/BoltScooters/imagenes/portada.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 80vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    color: #fff; 
+    padding: 0 20px; 
+}
+
+.hero-content {
+    position: relative; 
+    text-align: center; 
+    z-index: 2; 
+}
+
+.hero-content h1 {
+    font-family: 'Krona One', sans-serif; 
+    font-size: 3rem; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
+}
+
+.quienes-somos {
+    text-align: center; 
+    padding: 50px 20px; 
+    font-family: 'Karma', sans-serif; 
+}
+
+.quienes-somos h2 {
+    font-size: 2.5rem; 
+    margin-bottom: 20px; 
+    color: #5C252E; 
+}
+
+.quienes-somos p {
+    font-size: 1.1rem; 
+    margin-bottom: 40px; 
+}
+
+.items-somos {
+    display: flex; 
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+}
+
+.item-somos {
+    width: 30%; 
+    margin: 20px; 
+    text-align: center; 
+}
+
+.icono-somos {
+    width: 60px; 
+    height: 60px; 
+    margin-bottom: 10px; 
+}
+
+.resultado-exito {
+    background-color: #a00000; 
+    color: white; 
+    text-align: center;
+    padding: 100px 20px; 
+    font-family: 'Arial', sans-serif; 
+}
+
+.titulo {
+    font-family: 'Karma', sans-serif; 
+    font-size: 24px; 
+    font-weight: bold; 
+    margin-top: -10px; 
+    margin-bottom: 20px; 
+}
+
+.estadisticas {
+    display: flex; 
+    justify-content: space-around; 
+    margin-top: 20px; 
+}
+
+.estadistica {
+    font-family: 'Karma', sans-serif; 
+    font-size: 18px; 
+}
+
+.fondo-rojo {
+    background-color: #a00000; 
+    color: white; 
+    text-align: center;
+    padding: 50px 20px; 
+    font-family: 'Karma', sans-serif;
+}
+
+.fondo-rojo h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.estadisticas {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px; 
+}
+
+.estadistica {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.opiniones-clientes {
+    padding: 20px;
+    text-align: center;
+}
+
+.opiniones-clientes h2 {
+    font-family: 'Karma', sans-serif;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.contenedor-opiniones {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    justify-items: center; 
+    margin: 20px 0;
+}
+
+.opinion {
+    font-family: 'Karma', sans-serif;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    width: 100%; 
+    max-width: 400px; 
+    text-align: center;
+}
+
+.opinion img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.pie-pagina {
+    background-color: #0a0a0a; 
+    color: #fff; 
+    padding: 30px 20px; 
+    text-align: center;
+    font-family: 'Karma', sans-serif;
+}
+
+.contenedor-footer {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto; 
+}
+
+.contacto, .redes-sociales, .logo-footer {
+    flex: 1; 
+    margin: 0 10px; 
+    text-align: center; 
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+    margin-top: 10px;
+}
+
+.icono-red {
+    width: 36px; 
+    height: 36px;
+}
+
+.logo-footer img {
+    max-width: 120px; 
+    margin-top: 10px;
+}
+
+.copyright {
+    margin-top: 20px; 
+    font-size: 14px; 
+    color: #ccc; 
+}
