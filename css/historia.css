@@ -44,7 +44,7 @@ body, html {
 
 .hero {
     position: relative; 
-    background-image: url('/BoltScooters/imagenes/portadahistoria.png'); 
+    background-image: url('../imagenes/portadahistoria.png'); 
     background-size: cover; 
     background-position: center; 
     height: 80vh; 
