@@ -164,6 +164,83 @@ body, html {
     color: #ccc; 
 }
 
+/* Estilo del slider */
+.slider {
+    width: 80%; /* Ancho más pequeño */
+    max-width: 800px; /* Límite máximo de tamaño */
+    overflow: hidden;
+    margin: 20px auto; /* Centrado automático */
+}
+
+.slider-container {
+    display: flex;
+    animation: slide 15s infinite linear; /* Animación más rápida */
+}
+
+.slider-item {
+    flex: 0 0 100%; /* Cada imagen ocupa el 100% del ancho del contenedor */
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-item img {
+    width: 70%; /* Imágenes más pequeñas */
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 10px; /* Bordes redondeados para las imágenes */
+}
+
+/* Animación del slider */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33.33% { transform: translateX(-100%); }  /* Desplaza la primera imagen */
+    66.66% { transform: translateX(-200%); }  /* Desplaza la segunda imagen */
+    100% { transform: translateX(-300%); }  /* Desplaza la tercera imagen */
+}
+
+/* Estilo de la imagen del patín moviéndose en círculo */
+.patin-derrapando {
+    position: absolute;  /* Para que se mueva libremente en la página */
+    width: 120px;  /* Ajusta el tamaño de la imagen */
+    animation: derrapando 10s infinite linear;  /* Aplicamos la animación de derrape */
+    z-index: 1000;  /* Asegura que la imagen esté encima de otros elementos */
+}
+
+/* Animación del derrape en círculo */
+@keyframes derrapando {
+    0% {
+        top: 50%;  /* Empieza en el centro de la pantalla */
+        left: 50%;  /* Empieza en el centro de la pantalla */
+        transform: translate(-50%, -50%) rotate(0deg);  /* Mueve la imagen al centro y la gira */
+    }
+    25% {
+        top: 10%;  /* Mueve hacia arriba */
+        left: 50%;  /* Se mantiene centrado horizontalmente */
+        transform: translate(-50%, -50%) rotate(90deg);  /* Da un giro de 90 grados */
+    }
+    50% {
+        top: 50%;  /* Vuelve al centro verticalmente */
+        left: 90%;  /* Se mueve hacia la derecha */
+        transform: translate(-50%, -50%) rotate(180deg);  /* Da un giro de 180 grados */
+    }
+    75% {
+        top: 90%;  /* Mueve hacia abajo */
+        left: 50%;  /* Se mantiene centrado horizontalmente */
+        transform: translate(-50%, -50%) rotate(270deg);  /* Da un giro de 270 grados */
+    }
+    100% {
+        top: 50%;  /* Vuelve al centro */
+        left: 10%;  /* Se mueve hacia la izquierda */
+        transform: translate(-50%, -50%) rotate(360deg);  /* Da un giro completo de 360 grados */
+    }
+}
+
+
+
+
+
 @media (max-width: 768px) {
     .navbar ul {
         flex-direction: column;
