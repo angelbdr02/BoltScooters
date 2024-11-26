@@ -1,157 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/js/bootstrap.js" defer>
     <link rel="stylesheet" href="../node_modules/@popperjs/core/dist/esm/popper.js" defer>
-    <title>Document</title>
-
+    <link rel="icon" type="image/png" href="imagenes/logo.ico">
+    <title>BoltScooters</title>
 </head>
 <body>
-    <div class="container">
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-        <span class="fs-4">Simple header</span>
-      </a>
-
-      <ul class="nav nav-pills">
-        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-      </ul>
+   
+    <header class="bg-danger text-white py-2">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">BoltScooters</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link text-white" href="#">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="historia.html">Historia</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="tienda.html">Tienda</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-    <main>
 
-        <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-              <div class="container">
-                <div class="carousel-caption text-start">
-                  <h1>Example headline.</h1>
-                  <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
-                  <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-              <div class="container">
-                <div class="carousel-caption">
-                  <h1>Another example headline.</h1>
-                  <p>Some representative placeholder content for the second slide of the carousel.</p>
-                  <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-              <div class="container">
-                <div class="carousel-caption text-end">
-                  <h1>One more for good measure.</h1>
-                  <p>Some representative placeholder content for the third slide of this carousel.</p>
-                  <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+    
+    <div class="hero position-relative bg-dark text-white text-center d-flex align-items-center justify-content-center" style="height: 80vh; background-image: url('../imagenes/portada.jpg'); background-size: cover; background-position: center;">
+        <div class="container">
+            <h1 class="display-3 fw-bold">BoltScooters</h1>
         </div>
-      
-      
-        <!-- Marketing messaging and featurettes
-        ================================================== -->
-        <!-- Wrap the rest of the page in another container to center all the content. -->
-      
-        <div class="container marketing">
-      
-          <!-- Three columns of text below the carousel -->
-          <div class="row">
-            <div class="col-lg-4">
-              <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-              <h2 class="fw-normal">Heading</h2>
-              <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-              <p><a class="btn btn-secondary" href="#">View details »</a></p>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-              <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-              <h2 class="fw-normal">Heading</h2>
-              <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-              <p><a class="btn btn-secondary" href="#">View details »</a></p>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-              <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-              <h2 class="fw-normal">Heading</h2>
-              <p>And lastly this, the third column of representative placeholder content.</p>
-              <p><a class="btn btn-secondary" href="#">View details »</a></p>
-            </div><!-- /.col-lg-4 -->
-          </div><!-- /.row -->
-      
-      
-          <!-- START THE FEATURETTES -->
-      
-          <hr class="featurette-divider">
-      
-          <div class="row featurette">
-            <div class="col-md-7">
-              <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-body-secondary">It’ll blow your mind.</span></h2>
-              <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
-            </div>
-            <div class="col-md-5">
-              <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
-            </div>
-          </div>
-      
-          <hr class="featurette-divider">
-      
-          <div class="row featurette">
-            <div class="col-md-7 order-md-2">
-              <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See for yourself.</span></h2>
-              <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
-            </div>
-            <div class="col-md-5 order-md-1">
-              <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
-            </div>
-          </div>
-      
-          <hr class="featurette-divider">
-      
-          <div class="row featurette">
-            <div class="col-md-7">
-              <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-body-secondary">Checkmate.</span></h2>
-              <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
-            </div>
-            <div class="col-md-5">
-              <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
-            </div>
-          </div>
-      
-          <hr class="featurette-divider">
-      
-          <!-- /END THE FEATURETTES -->
-      
-        </div><!-- /.container -->
-      
+    </div>
 
-      </main>
-  </div>
+    
+    <section class="container text-center my-5">
+        <h2 class="mb-4">¿Quiénes somos?</h2>
+        <p class="mb-5">Somos un equipo joven y apasionado por la movilidad eléctrica. Nos enfocamos en crear soluciones sostenibles y ofrecer un servicio cercano y personalizado. Nuestro objetivo es hacer tu vida más fácil y divertida con productos de alta calidad.</p>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <img src="imagenes/calidad.png" alt="Calidad" class="mb-3" width="60">
+                <h3>Calidad</h3>
+                <p>Patinetes eléctricos de última generación, diseñados para durar y garantizar un rendimiento seguro y confiable.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="imagenes/compromiso.png" alt="Compromiso" class="mb-3" width="60">
+                <h3>Compromiso</h3>
+                <p>Cuidamos cada detalle, desde el diseño hasta el servicio postventa, para asegurarnos de que tengas la mejor experiencia.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="imagenes/innovacion.png" alt="Innovación" class="mb-3" width="60">
+                <h3>Innovación</h3>
+                <p>Siempre buscamos nuevas formas de mejorar la movilidad urbana y reducir el impacto ambiental.</p>
+            </div>
+        </div>
+    </section>
+
+  
+    <section class="bg-danger text-white text-center py-5">
+        <h2 class="mb-4">Resultados que Demuestran Nuestro Éxito...</h2>
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-md-4"><p>+10,000 patinetes vendidos</p></div>
+                <div class="col-md-4"><p>5 años liderando el sector...</p></div>
+                <div class="col-md-4"><p>98% de satisfacción...</p></div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="container text-center my-5">
+        <h2 class="mb-4">La Opinión de Nuestros Clientes Cuenta</h2>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card bg-dark text-white">
+                    <img src="imagenes/cliente1.png" class="card-img-top rounded-circle mx-auto d-block mt-3" alt="Cliente 1" style="width: 80px; height: 80px;">
+                    <div class="card-body">
+                        <p class="card-text">"Desde que compré mi BoltScooter, mi vida ha cambiado. Es ágil, fácil de manejar y me ha permitido evitar el tráfico en mis trayectos diarios. Además, la atención al cliente fue excepcional; me ayudaron a elegir el modelo perfecto para mí. ¡Definitivamente recomendaré BoltScooters a mis amigos!"</p>
+                        <p>★★★★★</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-dark text-white">
+                    <img src="imagenes/cliente2.png" class="card-img-top rounded-circle mx-auto d-block mt-3" alt="Cliente 2" style="width: 80px; height: 80px;">
+                    <div class="card-body">
+                        <p class="card-text">"Adquirí un BoltScooter hace seis meses y no podría estar más satisfecho. La velocidad y la duración de la batería superan mis expectativas. Utilizo el patinete para ir al trabajo y ha hecho que mis desplazamientos sean mucho más agradables. Además, su diseño es elegante y moderno. ¡Totalmente recomendable!"</p>
+                        <p>★★★★★</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-dark text-white">
+                    <img src="imagenes/cliente3.png" class="card-img-top rounded-circle mx-auto d-block mt-3" alt="Cliente 2" style="width: 80px; height: 80px;">
+                    <div class="card-body">
+                        <p class="card-text">"Compré el BoltScooter Eco Ride y ha sido una de las mejores decisiones que he tomado. Es perfecto para mis recorridos cortos y me encanta saber que estoy contribuyendo al medio ambiente. El servicio al cliente fue excelente; me guiaron en todo el proceso de compra. ¡No puedo dejar de usarlo!"</p>
+                        <p>★★★★★</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-dark text-white">
+                    <img src="imagenes/cliente4.png" class="card-img-top rounded-circle mx-auto d-block mt-3" alt="Cliente 2" style="width: 80px; height: 80px;">
+                    <div class="card-body">
+                        <p class="card-text">"El BoltScooter Sporty R es simplemente increíble. La velocidad y el rendimiento son impresionantes. Me siento seguro y cómodo al conducirlo, incluso en calles concurridas. La atención que recibí al momento de la compra fue excepcional, y el equipo se aseguró de que tuviera todo lo que necesitaba. ¡Una gran inversión!"</p>
+                        <p>★★★★★</p>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+
+   
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <div class="col-md-4">
+                    <h3>Contáctanos</h3>
+                    <p>📍 Calle Ortega y Gasset, 12<br>14005 Córdoba, España</p>
+                    <p>📞 (+34) 900 123 456</p>
+                    <p>✉️ soporte@boltscooters.com</p>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <img src="imagenes/logo.ico" alt="Logo de BoltScooters" class="img-fluid" style="max-width: 120px;">
+                </div>
+                <div class="col-md-4">
+                    <h3>Síguenos</h3>
+                    <div class="d-flex justify-content-center">
+                        <img src="imagenes/facebook.png" alt="Facebook" class="mx-2" width="36">
+                        <img src="imagenes/x.png" alt="X (antes Twitter)" class="mx-2" width="36">
+                        <img src="imagenes/instagram.png" alt="Instagram" class="mx-2" width="36">
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>This work is licensed under <a href="https://creativecommons.org/licenses/by-nd/4.0/" target="_blank">CC BY-ND 4.0</a>.</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
