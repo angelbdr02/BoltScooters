@@ -203,7 +203,7 @@ body, html {
 /* Estilo de la imagen del patín moviéndose en círculo */
 .patin-derrapando {
     position: absolute;  /* Para que se mueva libremente en la página */
-    width: 120px;  /* Ajusta el tamaño de la imagen */
+    width: 4%;  /* Ajusta el tamaño de la imagen */
     animation: derrapando 10s infinite linear;  /* Aplicamos la animación de derrape */
     z-index: 1000;  /* Asegura que la imagen esté encima de otros elementos */
 }
