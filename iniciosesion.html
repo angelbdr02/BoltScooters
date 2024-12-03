@@ -1,81 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Inicio Sesión</title>
-        <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Karma&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./css/iniciosesion.css">
-        <link rel="icon" type="image/png" href="imagenes/logo.ico">
-    </head>
-<body>
-    <div class="header">
-        <div class="navbar">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="historia.html">Historia</a></li>
-                <li><a href="tienda.html">Tienda</a></li>
-            </ul>
-        </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <div class="contenedor-inicio-sesion">
-        <div class="caja-inicio-sesion">
-            <div class="encabezado-inicio-sesion">
-                <span class="icono">👤</span>
-                <h2>Iniciar Sesión</h2>
-                <span class="icono">👤</span>
-            </div>
-            <form>
-                <label for="usuario">Usuario:</label>
-                <input type="text" id="usuario" name="usuario" required>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap.css" defer> 
+    <link rel="stylesheet" href="./bootstrap.js" defer>
+    <link rel="stylesheet" href="./popper.js" defer> 
+    <link rel="icon" type="image/png" href="imagenes/logo.ico">
+    <title>Inicio Sesión</title>
+</head>
+<body class="bg-white text-dark d-flex flex-column min-vh-100">
 
-                <label for="contrasena">Contraseña:</label>
-                <input type="password" id="contrasena" name="contrasena" required>
-
-                <button type="submit">Iniciar Sesión</button>
-            </form>
-
-            <div class="registro">
-                <p>¿No tienes cuenta? <a href="registro.html">Regístrate</a></p>
-            </div>
-
-            <div class="logo">
-                <img src="imagenes/logo.ico" alt="Logo">
-            </div>
-        </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <footer class="pie-pagina">
-        <div class="contenedor-footer">
-            <div class="contacto">
-                <h3>Contáctanos</h3>
-                <p>📍 Calle Ortega y Gasset, 12<br>
-                14005 Córdoba, España</p>
-                <p>📞 (+34) 900 123 456 (Lun - Vie, 9:00 - 18:00)</p>
-                <p>✉️ soporte@boltscooters.com</p>
-            </div>
-            <div class="logo-footer">
-                <img src="imagenes/logo.ico" alt="Logo de BoltScooters">
-            </div>
-            <div class="redes-sociales">
-                <h3>Síguenos en nuestras redes sociales:</h3>
-                <div class="icons">
-                    <img src="imagenes/facebook.png" alt="Facebook" class="icono-red">
-                    <img src="imagenes/x.png" alt="X (antes Twitter)" class="icono-red">
-                    <img src="imagenes/instagram.png" alt="Instagram" class="icono-red">
+    <header class="bg-danger text-white py-2">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link text-white" href="./index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="./historia.html">Historia</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="./tienda.html">Tienda</a></li>
+                    </ul>
                 </div>
-                <p>@BoltScooters_Official</p>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container flex-grow-1 d-flex align-items-center justify-content-center my-5">
+        <div class="card bg-dark text-white p-4 shadow-lg" style="max-width: 400px; width: 100%;">
+            <h2 class="text-center mb-4">Iniciar Sesión</h2>
+            <form action="paginapago.html">
+                <div class="mb-3">
+                    <label for="usuario" class="form-label">Usuario:</label>
+                    <input type="text" id="usuario" name="usuario" class="form-control rounded-pill" required>
+                </div>
+                <div class="mb-3">
+                    <label for="contrasena" class="form-label">Contraseña:</label>
+                    <input type="password" id="contrasena" name="contrasena" class="form-control rounded-pill" required>
+                </div>
+                <button type="submit" class="btn btn-light w-100 rounded-pill">Iniciar Sesión</button>
+            </form>
+            <div class="text-center mt-3">
+                <p>¿No tienes cuenta? <a href="registro.html" class="text-warning">Regístrate</a></p>
             </div>
         </div>
-        <div class="copyright">
-            <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="https://creativecommons.org/licenses/by-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt=""></a></p>
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <div class="col-md-4">
+                    <h3>Contáctanos</h3>
+                    <p>📍 Calle Ortega y Gasset, 12<br>14005 Córdoba, España</p>
+                    <p>📞 (+34) 900 123 456</p>
+                    <p>✉️ soporte@boltscooters.com</p>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <img src="imagenes/logo.ico" alt="Logo de BoltScooters" class="img-fluid" style="max-width: 120px;">
+                </div>
+                <div class="col-md-4">
+                    <h3>Síguenos</h3>
+                    <div class="d-flex justify-content-center">
+                        <img src="imagenes/facebook.png" alt="Facebook" class="mx-2" width="36">
+                        <img src="imagenes/x.png" alt="X (antes Twitter)" class="mx-2" width="36">
+                        <img src="imagenes/instagram.png" alt="Instagram" class="mx-2" width="36">
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>This work is licensed under <a href="https://creativecommons.org/licenses/by-nd/4.0/" target="_blank">CC BY-ND 4.0</a>.</p>
+            </div>
         </div>
     </footer>
+
 </body>
 </html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap.css" defer>
+    <link rel="stylesheet" href="./bootstrap.js" defer>
+    <link rel="stylesheet" href="./popper.js" defer>
+    <link rel="icon" type="image/png" href="imagenes/logo.ico">
+    <title>Pago</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-danger text-white py-2">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link text-white" href="./index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="./historia.html">Historia</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="./tienda.html">Tienda</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <div class="row g-5">
+            <div class="col-md-5 col-lg-4 order-md-last">
+                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="text-primary">Tu carro</span>
+                    <span class="badge bg-primary rounded-pill">3</span>
+                </h4>
+                <ul class="list-group mb-3">
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <div>
+                            <h6 class="my-0">BoltScooter Urban X</h6>
+                            <small class="text-muted">El BoltScooter Urban X es tu compañero ideal para la vida urbana.</small>
+                        </div>
+                        <span class="text-muted">399€</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between bg-light">
+                        <div class="text-success">
+                            <h6 class="my-0">Código promocional</h6>
+                            <small>BOLTSCOOTERS</small>
+                        </div>
+                        <span class="text-success">-5€</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Total (€)</span>
+                        <strong>394€</strong>
+                    </li>
+                </ul>
+
+                <form class="card p-2">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Código Promo">
+                        <button type="submit" class="btn btn-secondary">Aplicar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-7 col-lg-8">
+                <h4 class="mb-3">Dirección de envío</h4>
+                <form class="needs-validation" novalidate="">
+                    
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <label for="firstName" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Se requiere un nombre válido.
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="lastName" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Se requiere apellido válido.
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label for="username" class="form-label">Nombre de usuario</label>
+                            <div class="input-group has-validation">
+                                <span class="input-group-text">@</span>
+                                <input type="text" class="form-control" id="username" placeholder="Nombre de usuario" required="">
+                                <div class="invalid-feedback">Tu nombre de usuario es requerido.</div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label for="email" class="form-label">Email <span class="text-muted">(Opcional)</span></label>
+                            <input type="email" class="form-control" id="email" placeholder="tu@example.com">
+                            <div class="invalid-feedback">Ingresa una dirección de correo electrónico válida.</div>
+                        </div>
+                        <div class="col-12">
+                            <label for="address" class="form-label">Dirección</label>
+                            <input type="text" class="form-control" id="address" placeholder="Calle Santa Monica, 7..." required="">
+                            <div class="invalid-feedback">Por favor introduce tu dirección de envío.</div>
+                        </div>
+                        <div class="col-12">
+                            <label for="address2" class="form-label">Dirección 2 <span class="text-muted">(Opcional)</span></label>
+                            <input type="text" class="form-control" id="address2" placeholder="Apartamento o suite">
+                        </div>
+                        <div class="col-md-5">
+                            <label for="country" class="form-label">País</label>
+                            <select class="form-select" id="country" required="">
+                                <option value="">Elige...</option>
+                                <option>Españita</option>
+                            </select>
+                            <div class="invalid-feedback">Selecciona un país válido.</div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="state" class="form-label">Provincia</label>
+                            <select class="form-select" id="state" required="">
+                                <option value="">Elige...</option>
+                                <option>Álava</option>
+                                <option>Albacete</option>
+                                <option>Alicante</option>
+                                <option>Almería</option>
+                                <option>Asturias</option>
+                                <option>Ávila</option>
+                                <option>Badajoz</option>
+                                <option>Barcelona</option>
+                                <option>Burgos</option>
+                                <option>Cáceres</option>
+                                <option>Cádiz</option>
+                                <option>Cantabria</option>
+                                <option>Castellón</option>
+                                <option>Ciudad Real</option>
+                                <option>Córdoba</option>
+                                <option>Cuenca</option>
+                                <option>Gerona</option>
+                                <option>Granada</option>
+                                <option>Guadalajara</option>
+                                <option>Guipúzcoa</option>
+                                <option>Huelva</option>
+                                <option>Huesca</option>
+                                <option>Islas Baleares</option>
+                                <option>Jaén</option>
+                                <option>La Coruña</option>
+                                <option>La Rioja</option>
+                                <option>Las Palmas</option>
+                                <option>León</option>
+                                <option>Lérida</option>
+                                <option>Lugo</option>
+                                <option>Madrid</option>
+                                <option>Málaga</option>
+                                <option>Murcia</option>
+                                <option>Navarra</option>
+                                <option>Orense</option>
+                                <option>Palencia</option>
+                                <option>Pontevedra</option>
+                                <option>Salamanca</option>
+                                <option>Santa Cruz de Tenerife</option>
+                                <option>Segovia</option>
+                                <option>Sevilla</option>
+                                <option>Soria</option>
+                                <option>Tarragona</option>
+                                <option>Teruel</option>
+                                <option>Toledo</option>
+                                <option>Valencia</option>
+                                <option>Valladolid</option>
+                                <option>Vizcaya</option>
+                                <option>Zamora</option>
+                                <option>Zaragoza</option>
+                                <option>Ceuta</option>
+                                <option>Melilla</option>
+                            </select>
+                            
+                           
+                            <div class="invalid-feedback">Proporciona un estado válido.</div>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="zip" class="form-label">Código postal</label>
+                            <input type="text" class="form-control" id="zip" placeholder="" required="">
+                            <div class="invalid-feedback">Código postal requerido.</div>
+                        </div>
+                   
+                    </div>
+
+                    <hr class="my-4">
+
+                    <h4 class="mb-3">Pago</h4>
+                    <div class="my-3">
+                        <div class="form-check">
+                            <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required>
+                            <label class="form-check-label" for="credit">Tarjeta de crédito</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                            <label class="form-check-label" for="debit">Tarjeta de débito</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                            <label class="form-check-label" for="paypal">PayPal</label>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+                    <button class="w-100 btn btn-primary btn-lg" type="submit">Continuar con el pago</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+   
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <div class="col-md-4">
+                    <h3>Contáctanos</h3>
+                    <p>📍 Calle Ortega y Gasset, 12<br>14005 Córdoba, España</p>
+                    <p>📞 (+34) 900 123 456</p>
+                    <p>✉️ soporte@boltscooters.com</p>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <img src="imagenes/logo.ico" alt="Logo de BoltScooters" class="img-fluid" style="max-width: 120px;">
+                </div>
+                <div class="col-md-4">
+                    <h3>Síguenos</h3>
+                    <div class="d-flex justify-content-center">
+                        <img src="imagenes/facebook.png" alt="Facebook" class="mx-2" width="36">
+                        <img src="imagenes/x.png" alt="X (antes Twitter)" class="mx-2" width="36">
+                        <img src="imagenes/instagram.png" alt="Instagram" class="mx-2" width="36">
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>This work is licensed under <a href="https://creativecommons.org/licenses/by-nd/4.0/" target="_blank">CC BY-ND 4.0</a>.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
