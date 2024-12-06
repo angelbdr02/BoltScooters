@@ -1,0 +1,829 @@
+@charset "UTF-8";
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #a00000;
+  padding: 10px 20px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  margin: 0 15px;
+  display: inline-block;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-family: "Krona One", sans-serif;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+.navbar a:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+}
+
+.hero {
+  position: relative;
+  background-image: url("../imagenes/images.png");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-family: "Krona One", sans-serif;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.productos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.producto {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  transition: transform 0.3s;
+  text-align: center;
+  text-decoration: none;
+}
+
+.producto img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.producto-info {
+  background-color: #a00000;
+  color: #fff;
+  padding: 20px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.producto-info h3 {
+  font-family: "Krona One", sans-serif;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.producto-info p {
+  font-size: 1.5rem;
+  margin: 10px 0 0;
+  font-weight: bold;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+}
+
+.pie-pagina {
+  background-color: #0a0a0a;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+  font-family: "Karma", sans-serif;
+}
+
+.contenedor-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contacto, .redes-sociales, .logo-footer {
+  flex: 1;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.icono-red {
+  width: 36px;
+  height: 36px;
+}
+
+.logo-footer img {
+  max-width: 120px;
+  margin-top: 10px;
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Estilo del slider */
+.slider {
+  width: 80%; /* Ancho más pequeño */
+  max-width: 800px; /* Límite máximo de tamaño */
+  overflow: hidden;
+  margin: 20px auto; /* Centrado automático */
+}
+
+.slider-container {
+  display: flex;
+  animation: slide 15s infinite linear; /* Animación más rápida */
+}
+
+.slider-item {
+  flex: 0 0 100%; /* Cada imagen ocupa el 100% del ancho del contenedor */
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-item img {
+  width: 70%; /* Imágenes más pequeñas */
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 10px; /* Bordes redondeados para las imágenes */
+}
+
+/* Animación del slider */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  33.33% {
+    transform: translateX(-100%);
+  } /* Desplaza la primera imagen */
+  66.66% {
+    transform: translateX(-200%);
+  } /* Desplaza la segunda imagen */
+  100% {
+    transform: translateX(-300%);
+  } /* Desplaza la tercera imagen */
+}
+/* Estilo de la imagen del patín moviéndose en círculo */
+.patin-derrapando {
+  position: absolute; /* Para que se mueva libremente en la página */
+  width: 4%; /* Ajusta el tamaño de la imagen */
+  animation: derrapando 10s infinite linear; /* Aplicamos la animación de derrape */
+  z-index: 1000; /* Asegura que la imagen esté encima de otros elementos */
+}
+
+/* Animación del derrape en círculo */
+@keyframes derrapando {
+  0% {
+    top: 50%; /* Empieza en el centro de la pantalla */
+    left: 50%; /* Empieza en el centro de la pantalla */
+    transform: translate(-50%, -50%) rotate(0deg); /* Mueve la imagen al centro y la gira */
+  }
+  25% {
+    top: 10%; /* Mueve hacia arriba */
+    left: 50%; /* Se mantiene centrado horizontalmente */
+    transform: translate(-50%, -50%) rotate(90deg); /* Da un giro de 90 grados */
+  }
+  50% {
+    top: 50%; /* Vuelve al centro verticalmente */
+    left: 90%; /* Se mueve hacia la derecha */
+    transform: translate(-50%, -50%) rotate(180deg); /* Da un giro de 180 grados */
+  }
+  75% {
+    top: 90%; /* Mueve hacia abajo */
+    left: 50%; /* Se mantiene centrado horizontalmente */
+    transform: translate(-50%, -50%) rotate(270deg); /* Da un giro de 270 grados */
+  }
+  100% {
+    top: 50%; /* Vuelve al centro */
+    left: 10%; /* Se mueve hacia la izquierda */
+    transform: translate(-50%, -50%) rotate(360deg); /* Da un giro completo de 360 grados */
+  }
+}
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #a00000;
+  padding: 10px 20px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  margin: 0 15px;
+  display: inline-block;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-family: "Krona One", sans-serif;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+.navbar a:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+}
+
+.hero {
+  position: relative;
+  background-image: url("../imagenes/portadahistoria.png");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-family: "Krona One", sans-serif;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.historia {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.historia-seccion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 40px 0;
+}
+
+.historia-seccion:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+.historia-imagen img {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.historia-texto {
+  flex: 1;
+  font-family: "Karma", serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.historia-rojo {
+  background-color: #a00000;
+  padding: 40px 20px;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.pie-pagina {
+  background-color: #0a0a0a;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+  font-family: "Karma", sans-serif;
+}
+
+.contenedor-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contacto, .redes-sociales, .logo-footer {
+  flex: 1;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.icono-red {
+  width: 36px;
+  height: 36px;
+}
+
+.logo-footer img {
+  max-width: 120px;
+  margin-top: 10px;
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #a00000;
+  padding: 10px 20px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  margin: 0 15px;
+  display: inline-block;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-family: "Krona One", sans-serif;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+.navbar a:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+}
+
+.hero {
+  position: relative;
+  background-image: url("../imagenes/portadatienda.png");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-family: "Krona One", sans-serif;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.productos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.producto {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  transition: transform 0.3s;
+  text-align: center;
+  text-decoration: none;
+}
+
+.producto img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.producto-info {
+  background-color: #a00000;
+  color: #fff;
+  padding: 20px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.producto-info h3 {
+  font-family: "Krona One", sans-serif;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.producto-info p {
+  font-size: 1.5rem;
+  margin: 10px 0 0;
+  font-weight: bold;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+}
+
+.pie-pagina {
+  background-color: #0a0a0a;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+  font-family: "Karma", sans-serif;
+}
+
+.contenedor-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contacto, .redes-sociales, .logo-footer {
+  flex: 1;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.icono-red {
+  width: 36px;
+  height: 36px;
+}
+
+.logo-footer img {
+  max-width: 120px;
+  margin-top: 10px;
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Estilo del slider */
+.slider {
+  width: 80%; /* Ancho más pequeño */
+  max-width: 800px; /* Límite máximo de tamaño */
+  overflow: hidden;
+  margin: 20px auto; /* Centrado automático */
+}
+
+.slider-container {
+  display: flex;
+  animation: slide 15s infinite linear; /* Animación más rápida */
+}
+
+.slider-item {
+  flex: 0 0 100%; /* Cada imagen ocupa el 100% del ancho del contenedor */
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-item img {
+  width: 70%; /* Imágenes más pequeñas */
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 10px; /* Bordes redondeados para las imágenes */
+}
+
+/* Animación del slider */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  33.33% {
+    transform: translateX(-100%);
+  } /* Desplaza la primera imagen */
+  66.66% {
+    transform: translateX(-200%);
+  } /* Desplaza la segunda imagen */
+  100% {
+    transform: translateX(-300%);
+  } /* Desplaza la tercera imagen */
+}
+/* Estilo de la imagen del patín moviéndose en círculo */
+.patin-derrapando {
+  position: absolute; /* Para que se mueva libremente en la página */
+  width: 4%; /* Ajusta el tamaño de la imagen */
+  animation: derrapando 10s infinite linear; /* Aplicamos la animación de derrape */
+  z-index: 1000; /* Asegura que la imagen esté encima de otros elementos */
+}
+
+/* Animación del derrape en círculo */
+@keyframes derrapando {
+  0% {
+    top: 50%; /* Empieza en el centro de la pantalla */
+    left: 50%; /* Empieza en el centro de la pantalla */
+    transform: translate(-50%, -50%) rotate(0deg); /* Mueve la imagen al centro y la gira */
+  }
+  25% {
+    top: 10%; /* Mueve hacia arriba */
+    left: 50%; /* Se mantiene centrado horizontalmente */
+    transform: translate(-50%, -50%) rotate(90deg); /* Da un giro de 90 grados */
+  }
+  50% {
+    top: 50%; /* Vuelve al centro verticalmente */
+    left: 90%; /* Se mueve hacia la derecha */
+    transform: translate(-50%, -50%) rotate(180deg); /* Da un giro de 180 grados */
+  }
+  75% {
+    top: 90%; /* Mueve hacia abajo */
+    left: 50%; /* Se mantiene centrado horizontalmente */
+    transform: translate(-50%, -50%) rotate(270deg); /* Da un giro de 270 grados */
+  }
+  100% {
+    top: 50%; /* Vuelve al centro */
+    left: 10%; /* Se mueve hacia la izquierda */
+    transform: translate(-50%, -50%) rotate(360deg); /* Da un giro completo de 360 grados */
+  }
+}
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #a00000;
+  padding: 10px 20px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  margin: 0 15px;
+  display: inline-block;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-family: "Krona One", sans-serif;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+.navbar a:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+}
+
+.producto-detalle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.producto-info {
+  display: flex;
+  background-color: #a00000;
+  color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+.producto-imagen {
+  max-width: 50%;
+  height: auto;
+  object-fit: cover;
+}
+
+.producto-descripcion {
+  padding: 20px;
+  font-family: "Karma", serif;
+}
+
+.producto-descripcion h2 {
+  font-family: "Krona One", sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.producto-descripcion p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.btn-comprar {
+  background-color: #a00000;
+  color: #fff;
+  font-family: "Krona One", sans-serif;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-comprar:hover {
+  background-color: #800000;
+}
+
+.pie-pagina {
+  background-color: #0a0a0a;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+  font-family: "Karma", sans-serif;
+}
+
+.contenedor-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contacto, .redes-sociales, .logo-footer {
+  flex: 1;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.icono-red {
+  width: 36px;
+  height: 36px;
+}
+
+.logo-footer img {
+  max-width: 120px;
+  margin-top: 10px;
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
