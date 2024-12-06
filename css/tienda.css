@@ -164,31 +164,34 @@ body, html {
     color: #ccc; 
 }
 
-/* Estilo del slider */
+
 .slider {
-    width: 80%; /* Ancho más pequeño */
-    max-width: 800px; /* Límite máximo de tamaño */
+    width: 50%; /* Ancho más pequeño */
+    max-width: 600px; /* Límite máximo de tamaño */
     overflow: hidden;
     margin: 20px auto; /* Centrado automático */
+    position: relative; /* Para poder poner controles o flechas si lo necesitas */
 }
 
 .slider-container {
     display: flex;
-    animation: slide 15s infinite linear; /* Animación más rápida */
+    width: 300%; /* 100% por cada imagen en el slider */
+    animation: slide 15s infinite linear; /* Animación más rápida y continua */
 }
 
 .slider-item {
-    flex: 0 0 100%; /* Cada imagen ocupa el 100% del ancho del contenedor */
+    flex: 0 0 33.33%; /* Cada imagen ocupa el 33.33% del contenedor (3 imágenes en total) */
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .slider-item img {
-    width: 70%; /* Imágenes más pequeñas */
-    max-width: 100%;
-    object-fit: cover;
+    width: 90%; /* Las imágenes ahora ocupan solo el 90% de su contenedor, haciéndolas más pequeñas */
+    height: auto;
+    object-fit: cover; /* Ajuste adecuado */
     border-radius: 10px; /* Bordes redondeados para las imágenes */
 }
 
@@ -197,8 +200,10 @@ body, html {
     0% { transform: translateX(0); }
     33.33% { transform: translateX(-100%); }  /* Desplaza la primera imagen */
     66.66% { transform: translateX(-200%); }  /* Desplaza la segunda imagen */
-    100% { transform: translateX(-300%); }  /* Desplaza la tercera imagen */
+    100% { transform: translateX(0); }  /* Vuelve a la posición inicial */
 }
+
+
 
 /* Estilo de la imagen del patín moviéndose en círculo */
 .patin-derrapando {
