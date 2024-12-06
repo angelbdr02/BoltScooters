@@ -303,6 +303,48 @@ ol ul,
 ul ol {
   margin-bottom: 0;
 }
+/* Header background */
+.custom-header {
+  background-color: #a00000; /* Rojo oscuro */
+}
+
+/* Navbar styles */
+.custom-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px; /* Altura fija */
+}
+
+/* Navbar list styles */
+.custom-navbar ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Navbar item styles */
+.custom-navbar li {
+  margin: 0 15px;
+}
+
+/* Link styles */
+.custom-link {
+  text-decoration: none;
+  font-family: 'Krona One', sans-serif;
+  color: #fff; /* Blanco */
+  font-size: 16px;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+/* Hover effect */
+.custom-link:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+}
+
 
 dt {
   font-weight: 700;
