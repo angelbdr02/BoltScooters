@@ -13,12 +13,12 @@
 <body> 
     
    
-    <header class="custom-header py-2">
-        <nav class="navbar navbar-expand-lg custom-navbar">
+    <header class="custom-header py-2" role="banner">
+        <nav class="navbar navbar-expand-lg custom-navbar" role="navigation" aria-label="Navegación principal">
             <div class="container">
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link custom-link" href="#">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link custom-link" href="#" aria-current="page">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link custom-link" href="historia.html">Historia</a></li>
                         <li class="nav-item"><a class="nav-link custom-link" href="tienda.html">Tienda</a></li>
                         <li class="nav-item"><a class="nav-link custom-link" href="descuentos.html">OFERTAS</a></li>
@@ -30,29 +30,29 @@
     
 
     
-    <div class="hero position-relative bg-dark text-white text-center d-flex align-items-center justify-content-center" style="height: 80vh; background-image: url('../imagenes/portada.jpg'); background-size: cover; background-position: center;">
+    <div class="hero position-relative bg-dark text-white text-center d-flex align-items-center justify-content-center" style="height: 80vh; background-image: url('../imagenes/portada.jpg'); background-size: cover; background-position: center;" role="img" aria-label="Imagen de portada mostrando BoltScooters">
         <div class="container">
             <h1 class="display-3 fw-bold">BoltScooters</h1>
         </div>
     </div>
 
     
-    <section class="container text-center my-5">
-        <h2 class="mb-4">¿Quiénes somos?</h2>
+    <section class="container text-center my-5" role="region" aria-labelledby="quienes-somos">
+        <h2 id="quienes-somos" class="mb-4">¿Quiénes somos?</h2>
         <p class="mb-5">Somos un equipo joven y apasionado por la movilidad eléctrica. Nos enfocamos en crear soluciones sostenibles y ofrecer un servicio cercano y personalizado. Nuestro objetivo es hacer tu vida más fácil y divertida con productos de alta calidad.</p>
         <div class="row g-4">
             <div class="col-md-4">
-                <img src="imagenes/calidad.png" alt="Calidad" class="mb-3" width="60">
+                <img src="imagenes/calidad.png" alt="Calidad" class="mb-3" width="60" aria-hidden="true">
                 <h3>Calidad</h3>
                 <p>Patinetes eléctricos de última generación, diseñados para durar y garantizar un rendimiento seguro y confiable.</p>
             </div>
             <div class="col-md-4">
-                <img src="imagenes/compromiso.png" alt="Compromiso" class="mb-3" width="60">
+                <img src="imagenes/compromiso.png" alt="Compromiso" class="mb-3" width="60" aria-hidden="true">
                 <h3>Compromiso</h3>
                 <p>Cuidamos cada detalle, desde el diseño hasta el servicio postventa, para asegurarnos de que tengas la mejor experiencia.</p>
             </div>
             <div class="col-md-4">
-                <img src="imagenes/innovacion.png" alt="Innovación" class="mb-3" width="60">
+                <img src="imagenes/innovacion.png" alt="Innovación" class="mb-3" width="60" aria-hidden="true">
                 <h3>Innovación</h3>
                 <p>Siempre buscamos nuevas formas de mejorar la movilidad urbana y reducir el impacto ambiental.</p>
             </div>
@@ -60,8 +60,8 @@
     </section>
 
   
-    <section class="custom-header text-white text-center py-5">
-        <h2 class="mb-4">Resultados que Demuestran Nuestro Éxito...</h2>
+    <section class="custom-header text-white text-center py-5" role="region" aria-labelledby="resultados">
+        <h2 id="resultados" class="mb-4">Resultados que Demuestran Nuestro Éxito...</h2>
         <div class="container">
             <div class="row g-3">
                 <div class="col-md-4"><p>+10,000 patinetes vendidos</p></div>
@@ -74,55 +74,55 @@
     
 
     
-    <section class="container text-center my-5">
-        <h2 class="mb-4">La Opinión de Nuestros Clientes Cuenta</h2>
+    <section class="container text-center my-5" role="region" aria-labelledby="opiniones-clientes">
+        <h2 id="opiniones-clientes" class="mb-4">La Opinión de Nuestros Clientes Cuenta</h2>
         <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col">
-                <div class="card bg-dark text-white">
-                    <img src="imagenes/cliente1.png" class="card-img-top rounded-circle mx-auto d-block mt-3" alt="Cliente 1" style="width: 80px; height: 80px;">
+                <div class="card bg-dark text-white" role="article" aria-labelledby="cliente1-opinion">
+                    <img src="imagenes/cliente1.png" class="card-img-top rounded-circle mx-auto d-block mt-3" alt="Foto de Cliente 1" style="width: 80px; height: 80px;">
                     <div class="card-body">
-                        <p class="card-text">"Desde que compré mi BoltScooter, mi vida ha cambiado. Es ágil, fácil de manejar y me ha permitido evitar el tráfico en mis trayectos diarios. Además, la atención al cliente fue excepcional; me ayudaron a elegir el modelo perfecto para mí. ¡Definitivamente recomendaré BoltScooters a mis amigos!"</p>
-                        <p>★★★★★</p>
+                        <p id="cliente1-opinion" class="card-text">"Desde que compré mi BoltScooter, mi vida ha cambiado. Es ágil, fácil de manejar y me ha permitido evitar el tráfico en mis trayectos diarios. Además, la atención al cliente fue excepcional; me ayudaron a elegir el modelo perfecto para mí. ¡Definitivamente recomendaré BoltScooters a mis amigos!"</p>
+                        <p aria-label="Calificación 5 de 5 estrellas">★★★★★</p>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card bg-dark text-white">
-                    <img src="imagenes/cliente2.png" class="card-img-top rounded-circle mx-auto d-block mt-3" alt="Cliente 2" style="width: 80px; height: 80px;">
+                <div class="card bg-dark text-white" role="article" aria-labelledby="cliente2-opinion">
+                    <img src="imagenes/cliente2.png" class="card-img-top rounded-circle mx-auto d-block mt-3" alt="Foto de Cliente 2" style="width: 80px; height: 80px;">
                     <div class="card-body">
-                        <p class="card-text">"Adquirí un BoltScooter hace seis meses y no podría estar más satisfecho. La velocidad y la duración de la batería superan mis expectativas. Utilizo el patinete para ir al trabajo y ha hecho que mis desplazamientos sean mucho más agradables. Además, su diseño es elegante y moderno. ¡Totalmente recomendable!"</p>
-                        <p>★★★★★</p>
+                        <p id="cliente2-opinion" class="card-text">"Adquirí un BoltScooter hace seis meses y no podría estar más satisfecho. La velocidad y la duración de la batería superan mis expectativas. Utilizo el patinete para ir al trabajo y ha hecho que mis desplazamientos sean mucho más agradables. Además, su diseño es elegante y moderno. ¡Totalmente recomendable!"</p>
+                        <p aria-label="Calificación 5 de 5 estrellas">★★★★★</p>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card bg-dark text-white">
-                    <img src="imagenes/cliente3.png" class="card-img-top rounded-circle mx-auto d-block mt-3" alt="Cliente 3" style="width: 80px; height: 80px;">
+                <div class="card bg-dark text-white" role="article" aria-labelledby="cliente3-opinion">
+                    <img src="imagenes/cliente3.png" class="card-img-top rounded-circle mx-auto d-block mt-3" alt="Foto de Cliente 3" style="width: 80px; height: 80px;">
                     <div class="card-body">
-                        <p class="card-text">"Compré el BoltScooter Eco Ride y ha sido una de las mejores decisiones que he tomado. Es perfecto para mis recorridos cortos y me encanta saber que estoy contribuyendo al medio ambiente. El servicio al cliente fue excelente; me guiaron en todo el proceso de compra. ¡No puedo dejar de usarlo!"</p>
-                        <p>★★★★★</p>
+                        <p id="cliente3-opinion" class="card-text">"Compré el BoltScooter Eco Ride y ha sido una de las mejores decisiones que he tomado. Es perfecto para mis recorridos cortos y me encanta saber que estoy contribuyendo al medio ambiente. El servicio al cliente fue excelente; me guiaron en todo el proceso de compra. ¡No puedo dejar de usarlo!"</p>
+                        <p aria-label="Calificación 5 de 5 estrellas">★★★★★</p>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card bg-dark text-white">
-                    <img src="imagenes/cliente4.png" class="card-img-top rounded-circle mx-auto d-block mt-3" alt="Cliente 4" style="width: 80px; height: 80px;">
+                <div class="card bg-dark text-white" role="article" aria-labelledby="cliente4-opinion">
+                    <img src="imagenes/cliente4.png" class="card-img-top rounded-circle mx-auto d-block mt-3" alt="Foto de Cliente 4" style="width: 80px; height: 80px;">
                     <div class="card-body">
-                        <p class="card-text">"El BoltScooter Sporty R es simplemente increíble. La velocidad y el rendimiento son impresionantes. Me siento seguro y cómodo al conducirlo, incluso en calles concurridas. La atención que recibí al momento de la compra fue excepcional, y el equipo se aseguró de que tuviera todo lo que necesitaba. ¡Una gran inversión!"</p>
-                        <p>★★★★★</p>
+                        <p id="cliente4-opinion" class="card-text">"El BoltScooter Sporty R es simplemente increíble. La velocidad y el rendimiento son impresionantes. Me siento seguro y cómodo al conducirlo, incluso en calles concurridas. La atención que recibí al momento de la compra fue excepcional, y el equipo se aseguró de que tuviera todo lo que necesitaba. ¡Una gran inversión!"</p>
+                        <p aria-label="Calificación 5 de 5 estrellas">★★★★★</p>
                     </div>
                 </div>
             </div>
-           
         </div>
     </section>
+    
 
    
-    <footer class="bg-dark text-white py-4">
+    <footer class="bg-dark text-white py-4" role="contentinfo" aria-labelledby="footer-info">
         <div class="container">
             <div class="row text-center text-md-start">
                 <div class="col-md-4">
-                    <h3 class="text-uppercase" style="color: #FFFFFF;">Contáctanos</h3>
+                    <h3 id="footer-info" class="text-uppercase" style="color: #FFFFFF;">Contáctanos</h3>
                     <p style="color: #DDDDDD;">📍 Calle Ortega y Gasset, 12<br>14005 Córdoba, España</p>
                     <p style="color: #DDDDDD;">📞 (+34) 900 123 456</p>
                     <p style="color: #DDDDDD;">✉️ soporte@boltscooters.com</p>
