@@ -165,18 +165,19 @@ body, html {
 }
 
 
+/* Estilo del slider */
 .slider {
     width: 50%; /* Ancho más pequeño */
     max-width: 600px; /* Límite máximo de tamaño */
     overflow: hidden;
     margin: 20px auto; /* Centrado automático */
-    position: relative; /* Para poder poner controles o flechas si lo necesitas */
+    position: relative; /* Para posicionar elementos si es necesario */
 }
 
 .slider-container {
     display: flex;
     width: 300%; /* 100% por cada imagen en el slider */
-    animation: slide 15s infinite linear; /* Animación más rápida y continua */
+    animation: slide 9s infinite linear; /* Animación más rápida y continua */
 }
 
 .slider-item {
@@ -197,11 +198,12 @@ body, html {
 
 /* Animación del slider */
 @keyframes slide {
-    0% { transform: translateX(0); }
-    33.33% { transform: translateX(-100%); }  /* Desplaza la primera imagen */
-    66.66% { transform: translateX(-200%); }  /* Desplaza la segunda imagen */
-    100% { transform: translateX(0); }  /* Vuelve a la posición inicial */
+    0% { transform: translateX(0); } /* Empieza desde la primera imagen */
+    33.33% { transform: translateX(-100%); }  /* Mueve a la segunda imagen */
+    66.66% { transform: translateX(-200%); }  /* Mueve a la tercera imagen */
+    100% { transform: translateX(0); }  /* Vuelve a la primera imagen */
 }
+
 
 
 
